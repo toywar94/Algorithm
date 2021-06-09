@@ -1,6 +1,7 @@
 package com.algorithm.programmers;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
@@ -25,42 +26,28 @@ import java.util.Scanner;
 	* */
 public class 같은숫자는싫어 {
     public static void main(String[] args) {
-
-        Scanner sc = new Scanner(System.in);
-
-        int size = 10;
-        int[] temp = new int[size];
-
-        for (int i = 0; i < 10; i++) {
-            temp[i] = sc.nextInt();
-            int[] result = solution(temp);
-            System.out.println(result);
-        }
+        //편하게 임의의 배열을 생성하자
+        int[] arr = {1,1,3,5,5,7,8,8,8,9};
+        System.out.println("결과" + Arrays.toString(solution(arr)));
     }
+    public static int[] solution(int[] arr){
 
-        public static int[] solution(int[] arr) {
+        int num = 10;
+        List<Integer> list = new ArrayList<>();
 
-        /*
-        1. arrayList 생성 후 중복제거한 값을 넣는다.
-        2. answer배열 생성 후 list에 값을 answer에 넣는다.
-        */
-            int num = 10;
-            List<Integer> list = new ArrayList<>();
-
-            for(int i = 0; i < arr.length; i++){
-                if(arr[i] != num){
-                    list.add(arr[i]);
-                    num = arr[i];
-                }
+        for(int i = 0; i < arr.length; i++){
+            if(arr[i] != num){
+                list.add(arr[i]);
+                num = arr[i];
             }
-
-            int[] answer = new int[list.size()];
-
-            for(int i = 0; i < answer.length; i++){
-                answer[i] = list.get(i);
-            }
-
-            return answer;
         }
 
+        int[] answer = new int[list.size()];
+
+        for(int i = 0; i < answer.length; i++){
+            answer[i] = list.get(i);
+        }
+
+        return answer;
+    }
 }
