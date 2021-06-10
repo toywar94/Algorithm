@@ -21,7 +21,7 @@ public class 나누어_떨어지는_숫자_배열 {
     public static void main(String[] args) {
         /*
         - 이거 어제 푼 '같은 숫자는 싫어' 비슷하네...
-        
+
         1. divisor로 나눠서 떨어지는 값을 list or array에 담고(for문 if문사용)
         2. 그 리스트가 비어있으면 -1 리턴 떄리고
         3. 마지막에 list의 있는 값들을 answer 배열에 넣으면 끝.
@@ -56,6 +56,8 @@ public class 나누어_떨어지는_숫자_배열 {
         for (int i = 0; i < answer.length; i++) {
             answer[i] = list.get(i);
         }
+        Arrays.sort(answer);
+
         return answer;
     }
     
