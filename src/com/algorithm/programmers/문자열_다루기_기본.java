@@ -1,9 +1,6 @@
 package com.algorithm.programmers;
 
-import java.sql.SQLOutput;
-import java.util.Arrays;
-
-public class Test {
+public class 문자열_다루기_기본 {
     public boolean stringDeal(String str){
         boolean answer = true;
         if (str.length() == 4 || str.length() == 6) {
@@ -21,10 +18,8 @@ public class Test {
 
     public static void main(String[] args) {
 
-        Test test = new Test();
+        문자열_다루기_기본 test = new 문자열_다루기_기본();
         System.out.println(test.stringDeal("a234"));
         System.out.println(test.stringDeal("1234"));
     }
 }
-
-
