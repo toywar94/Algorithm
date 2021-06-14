@@ -12,8 +12,9 @@ public class BubbleSort {
          * */
         for (int i = 0; i < num-1; i++) {
             for (int j = num-1; j > i ; j--) {
-                if(arr[j-1] > arr[j])
+                if(arr[j-1] > arr[j]){
                     swap(arr, j-1, j);
+                }
             }
         }
     }
