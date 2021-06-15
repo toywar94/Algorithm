@@ -1,11 +1,8 @@
 package com.algorithm.programmers;
 
-import java.nio.charset.StandardCharsets;
-import java.sql.SQLOutput;
 import java.util.Arrays;
 
-public class Test {
-
+public class 자연수_뒤집어_배열로_만들기 {
     public int[] reverseArr(long n){
 
         //long -> int로 변환.
@@ -22,11 +19,9 @@ public class Test {
 
     public static void main(String[] args) {
 
-        Test test = new Test();
-        System.out.println(test.reverseArr(12345));
+        자연수_뒤집어_배열로_만들기 test = new 자연수_뒤집어_배열로_만들기();
+        System.out.println(Arrays.toString(test.reverseArr(12345)));
 
 
     }
 }
-
-
