@@ -1,12 +1,9 @@
 package com.algorithm.programmers;
 
-import java.nio.charset.StandardCharsets;
-import java.sql.SQLOutput;
-import java.util.Arrays;
-
-public class Test {
+public class 수박수 {
 
     public String repeatString(int n){
+
         // n의 개수에 따라서 수박수박 반복되는데..
         // ex) n = 1 "수" / n = 2 "수박" / n = 3 "수박수"
 
@@ -24,12 +21,7 @@ public class Test {
     }
 
     public static void main(String[] args) {
-
-        Test test = new Test();
-        System.out.println(test.repeatString(3));
-
-
+        수박수 test = new 수박수();
+        System.out.println(test.repeatString(1));
     }
 }
-
-
