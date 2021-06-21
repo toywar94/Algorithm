@@ -39,7 +39,7 @@ public class 정수_내림차순으로_정렬하기 {
 
     public static void main(String[] args) {
 
-        Test test = new Test();
+        정수_내림차순으로_정렬하기 test = new 정수_내림차순으로_정렬하기();
         System.out.println(test.decendingSort(118372));
 
 
