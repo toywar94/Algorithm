@@ -1,21 +1,16 @@
 package com.algorithm.programmers;
 
-
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 
-
-public class Test {
-
-    public long repeatString(long n){
+public class 정수_내림차순으로_정렬하기 {
+    public long decendingSort(long n){
 
         //118352 -> 내림차순 853211
         /*
-        * 1.String으로 변환시킨다.
-        * 2.배열로 만들고 정렬한다 : toCharAt
-        * 3.정렬하고 long으로 변환해서 return 때리기
-        * */
+         * 1.String으로 변환시킨다.
+         * 2.배열로 만들고 정렬한다 : toCharAt
+         * 3.정렬하고 long으로 변환해서 return 때리기
+         * */
 
         String str = String.valueOf(n);
         String result = "";
@@ -45,10 +40,8 @@ public class Test {
     public static void main(String[] args) {
 
         Test test = new Test();
-        System.out.println(test.repeatString(118372));
+        System.out.println(test.decendingSort(118372));
 
 
     }
 }
-
-
