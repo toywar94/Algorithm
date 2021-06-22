@@ -1,14 +1,7 @@
 package com.algorithm.programmers;
 
-
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-
-
-public class Test {
-
-    public double convertInt(int[] n){
+public class 평균구하기 {
+    public double daverage(int[] n){
 
         int tmp = 0;
         int cnt = 0;
@@ -25,12 +18,10 @@ public class Test {
 
     public static void main(String[] args) {
 
-        Test test = new Test();
+        평균구하기 test = new 평균구하기();
         int[] n = {1,2,3,4};
-        System.out.println(test.convertInt(n));
+        System.out.println(test.daverage(n));
 
 
     }
 }
-
-
