@@ -14,6 +14,7 @@ public class CaesarCipher {
 
             for (int i = 0; i < s.length(); i++) {
                 char ch = s.charAt(i);
+
                 //둘 다 소문자 , n만큼 민다.
                 if(ch >= 'a' && ch <= 'z'){
                     //n이랑 더해서 z넘어가면 순환해야하니까 아스키코드
@@ -47,6 +48,6 @@ public class CaesarCipher {
             System.out.println(test.cipher("z",1));
             System.out.println(test.cipher("a B z",4));
 
-            
+
     }
 }

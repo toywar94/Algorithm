@@ -1,13 +1,6 @@
 package com.algorithm.programmers;
 
-
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-
-
-public class Test {
-
+public class 문자열_정수로_변환하기 {
     public int convertInt(String n){
         int n1 = Integer.parseInt(n);
 
@@ -17,11 +10,9 @@ public class Test {
 
     public static void main(String[] args) {
 
-        Test test = new Test();
+        문자열_정수로_변환하기 test = new 문자열_정수로_변환하기();
         System.out.println(test.convertInt("1234"));
 
 
     }
 }
-
-
