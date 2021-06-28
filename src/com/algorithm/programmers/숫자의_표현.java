@@ -1,19 +1,15 @@
 package com.algorithm.programmers;
 
-
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 
-
-public class Test {
+public class 숫자의_표현 {
     /*
-    *   1 + 2 + 3 + 4 + 5 = 15
-        4 + 5 + 6 = 15
-        7 + 8 = 15
-        15 = 15
-    * */
-    public int convertInt(int n) {
+*   1 + 2 + 3 + 4 + 5 = 15
+    4 + 5 + 6 = 15
+    7 + 8 = 15
+    15 = 15
+* */
+    public int expressionNum(int n) {
         int answer = 0;
         int[] nArr = new int[n];
 
@@ -43,13 +39,11 @@ public class Test {
 
     public static void main(String[] args) {
 
-        Test test = new Test();
+        숫자의_표현 test = new 숫자의_표현();
 
-        System.out.println(test.convertInt(15));
-        System.out.println(test.convertInt(6));
+        System.out.println(test.expressionNum(15));
+        System.out.println(test.expressionNum(6));
 
 
     }
 }
-
-
