@@ -1,12 +1,8 @@
 package com.algorithm.programmers;
 
-
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 
-
-public class Test {
+public class 행열의곱셈 {
     /*
      * 파라미터로 받은 2차원 배열의 행열 곱셉..
      * 로직은 간단함.
@@ -17,11 +13,11 @@ public class Test {
      * 2행
      * (3*3) + (3*2) = 15
      * */
-    public int[][] convertInt(int[][] arr1, int[][] arr2) {
+    public int[][] matrix(int[][] arr1, int[][] arr2) {
 
         int[][] answer = new int[arr1.length][arr2[0].length];
 
-        System.out.println("test : "+Arrays.deepToString(arr1));
+        System.out.println("test : "+ Arrays.deepToString(arr1));
         System.out.println("test : "+Arrays.deepToString(arr2));
         //arr1 행 : 3
         //arr2 행 : 2
@@ -41,14 +37,12 @@ public class Test {
 
     public static void main(String[] args) {
 
-        Test test = new Test();
+        행열의곱셈 test = new 행열의곱셈();
         int[][] arr1 = {{1,4},{3,2},{4,1}};
         int[][] arr2 = {{3,3},{3,3}};
 
         //System.out.println(test.convertInt(arr1,arr2));
-        System.out.println(Arrays.deepToString(test.convertInt(arr1, arr2)));
+        System.out.println(Arrays.deepToString(test.matrix(arr1, arr2)));
 
     }
 }
-
-
