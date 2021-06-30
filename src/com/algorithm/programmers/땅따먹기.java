@@ -1,20 +1,14 @@
 package com.algorithm.programmers;
 
-
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-
-
-public class Test {
+public class 땅따먹기 {
     /*
-    * 1행부터 1칸씩 내려온다
-    * 각 행의 4칸중 1칸만 밟으며 내려온다
-    * 같은 열을 반복해서 밟을순 없다.
-    * 행의 최대값을 밟아야 한다.
-    * */
+     * 1행부터 1칸씩 내려온다
+     * 각 행의 4칸중 1칸만 밟으며 내려온다
+     * 같은 열을 반복해서 밟을순 없다.
+     * 행의 최대값을 밟아야 한다.
+     * */
 
-    public int convertInt(int[][] land) {
+    public int eatGround(int[][] land) {
         int answer = 0; //return 값
 
         //1~4열을 랜덤으로 골라야하는건가?
@@ -42,15 +36,13 @@ public class Test {
 
     public static void main(String[] args) {
 
-        Test test = new Test();
+        땅따먹기 test = new 땅따먹기();
         int[][] numArr = {
                 {1,2,3,5},
                 {5,6,7,8},
                 {4,3,2,1}
         };
-        System.out.println(test.convertInt(numArr));
+        System.out.println(test.eatGround(numArr));
 
     }
 }
-
-
