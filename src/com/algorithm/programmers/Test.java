@@ -8,34 +8,29 @@ import java.util.List;
 
 public class Test {
     /*
-    * 1행부터 1칸씩 내려온다
-    * 각 행의 4칸중 1칸만 밟으며 내려온다
-    * 같은 열을 반복해서 밟을순 없다.
-    * 행의 최대값을 밟아야 한다.
+    * 나열된 배열의 최소공배수를 구하는 문제
+    * 첫번째와 두번째를 계산하고 차례대로 구하면됨.
     * */
 
-    public int convertInt(int[][] land) {
-        int answer = 0; //return 값
+    public int convertInt(int[] arr) {
+        int answer = arr[0];
+        //int[] tmpArr = new int[arr.length];
 
-        //1~4열을 랜덤으로 골라야하는건가?
-
-        //이 문제 2단계 맞는건가... 모르겠네...
-        //일단 행의 최대값을 구하는 조건은 제외하고 풀었는데...
-        for (int i = 0; i < land.length; i++) {
-            int randomRow = (int)(Math.random()*4);//0~3 열4개니까
-            System.out.println(randomRow);
-            for (int j = 0; j < 1; j++) {
-                //1행은 그냥 더하고 나머지 2행부터 그 전의 열은 찍으면 x
-                if(i == 0){
-                    answer += land[i][randomRow];
-                }else{
-                    //좀 더 생각해보자
-                }
-
-            }
+        for(int i = 0; i < arr.length; i++){
+            answer = min(answer, arr[i]);
 
         }
-
+        return answer;
+    }
+    static int min(int answer, int arrNum){
+        return (answer * arrNum) / gcd(answer, arrNum);
+    }
+    static int gcd(int answer, int arrNum){
+        while(arrNum != 0){
+            int tmp = answer % arrNum;
+            answer = arrNum;
+            arrNum = tmp;
+        }
         return answer;
     }
 
@@ -43,12 +38,8 @@ public class Test {
     public static void main(String[] args) {
 
         Test test = new Test();
-        int[][] numArr = {
-                {1,2,3,5},
-                {5,6,7,8},
-                {4,3,2,1}
-        };
-        System.out.println(test.convertInt(numArr));
+        int[] arr = {2,6,4,14};
+        System.out.println(test.convertInt(arr));
 
     }
 }
